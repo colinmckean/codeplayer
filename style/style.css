@@ -1,0 +1,15 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+#header{
+    width: 100%;
+    background-color: #EEE;
+    padding: 5px;
+}
+
+#buttonContainer{
+    width: 200px;
+    margin: 0 auto;
+}
