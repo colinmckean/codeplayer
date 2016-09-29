@@ -49,6 +49,13 @@ body{
     
 }
 textarea{
-    width:50%;
     resize: none;
+    border-top: none;
+    border-color: grey;
+}
+.panel{
+    float:left;
+}
+iframe{
+    border: none;
 }
