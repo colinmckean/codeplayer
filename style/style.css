@@ -48,3 +48,7 @@ body{
     background-color: grey;
     
 }
+textarea{
+    width:50%;
+    resize: none;
+}
