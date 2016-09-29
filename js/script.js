@@ -12,4 +12,6 @@ $(".toggleButton").click(function(){
 $(".panel").height($(window).height() - $("#header").height() -20);
 $(".panel").width(($(window).width()/2) -10);
 
-$("iframe").contents().find("html").html($("#htmlPanel").val());
+$("textarea").on('change keyup paste', function(){
+    $("iframe").contents().find("html").html($("#htmlPanel").val());
+});
