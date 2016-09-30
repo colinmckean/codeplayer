@@ -3,6 +3,7 @@ $(".toggleButton").hover(function(){
     $(this).addClass("highlightedButton");
 }, function(){
     $(this).removeClass("highlightedButton");
+    
 });
 
 $(".toggleButton").click(function(){
@@ -24,4 +25,6 @@ $("textarea").on('change keyup paste', function(){
 
 function updateOutput(){
     $("iframe").contents().find("html").html("<html><head><style type='text/css'>"+$("#cssPanel").val() + "</style></head></html><body>"+$("#htmlPanel").val()+"</body></html>");
+    
+    document.getElementById("outputPanel").contentWindow.eval($("#javascriptPanel").val());
 }
